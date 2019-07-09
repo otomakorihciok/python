@@ -185,3 +185,10 @@ Specifically check `ipaddress` and `urllib3` package versions to make sure they 
 Starting from 4.0 release, we do not support directly calling exec or attach calls. you should use stream module to call them. so instead
 of `resp = api.connect_get_namespaced_pod_exec(name, ...` you should call `resp = stream(api.connect_get_namespaced_pod_exec, name, ...`.
 See more at [exec example](examples/exec.py).
+
+
+## Notion
+
+This is based on [kubernetes client of Python](https://github.com/kubernetes-client/python).
+
+`requests` and `requests-oauthlib` are removed from `requirements.txt` because of the license issues.
